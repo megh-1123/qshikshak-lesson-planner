@@ -1,0 +1,9 @@
+.lesson-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.lesson-chapter {
+  margin-top: 8px;
+  color: var(--text-2);
+}

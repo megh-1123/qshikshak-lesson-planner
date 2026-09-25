@@ -1,0 +1,95 @@
+.lesson-planner-home {
+  width: 100%;
+  padding: 5px 0 30px;
+}
+
+.lesson-planner-menu {
+  display: grid;
+
+  /* smaller cards */
+  grid-template-columns: repeat(2, minmax(280px, 380px));
+
+  gap: 20px 32px;
+
+  align-items: stretch;
+  justify-content: start;
+}
+
+.lesson-planner-card {
+  min-height: 115px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 20px 24px;
+
+  background: #ffffff;
+
+  border: none;
+  border-radius: 18px;
+
+  cursor: pointer;
+  text-align: left;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.lesson-planner-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px
+    rgba(75, 67, 190, 0.1);
+}
+
+.lesson-planner-card-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.lesson-planner-card-title {
+  color: var(--primary);
+
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .lesson-planner-menu {
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .lesson-planner-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-planner-card {
+    min-height: 90px;
+    padding: 16px 18px;
+  }
+
+  .lesson-planner-card-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .lesson-planner-card-title {
+    font-size: 19px;
+  }
+}

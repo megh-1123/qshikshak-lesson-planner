@@ -1,0 +1,17 @@
+.period-mode {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.period-mode input {
+  margin-top: 3px;
+  accent-color: var(--primary);
+}
+.period-mode.active {
+  border-color: var(--primary);
+  background: var(--primary-50);
+}

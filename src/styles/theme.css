@@ -1,0 +1,57 @@
+/* Qshikshak theme tokens – taken from the existing Dashboard & Timetables screens */
+:root {
+  /* Brand */
+  --primary: #4b44b5; /* sidebar, headings, chips */
+  --primary-600: #3f39a0;
+  --primary-50: #eeedfb; /* hover / soft fills */
+  --primary-100: #dcd9f6;
+  --primary-200: #b9b3ec; /* selected timetable cell */
+
+  /* Surfaces */
+  --bg: #f3f4fc; /* page background */
+  --surface: #ffffff; /* cards */
+  --line: #e4e4ef;
+  --line-strong: #c9c7e6;
+  --band-assembly: #e9eeb5; /* assembly / study hour rows */
+  --band-break: #ececf1; /* break rows */
+
+  /* Text */
+  --text: #2b2a3a;
+  --text-2: #5f5e72;
+  --text-3: #8e8da3;
+  --on-primary: #ffffff;
+
+  /* Lesson status colours (from the design doc) */
+  --st-empty: #9ca3af;
+  --st-planned: #3b82f6;
+  --st-completed: #16a34a;
+  --st-partial: #f59e0b;
+  --st-notdone: #dc2626;
+  --st-rescheduled: #8b5cf6;
+  --st-cancelled: #6b7280;
+
+  --danger: #e0457b; /* "Not Integrated" pink on dashboard */
+
+  /* Shape */
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --radius-pill: 999px;
+  --shadow: 0 2px 10px rgba(75, 68, 181, 0.07);
+  --shadow-pop: 0 12px 40px rgba(43, 42, 58, 0.18);
+
+  /* Type */
+  --font: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 34px;
+
+  --sidebar-w: 216px;
+  --sidebar-w-collapsed: 72px;
+  --topbar-h: 68px;
+}
+

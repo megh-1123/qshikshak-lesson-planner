@@ -1,0 +1,45 @@
+.holiday-form {
+  grid-template-columns: 1fr 1fr;
+}
+.holiday-list {
+  display: flex;
+  flex-direction: column;
+}
+.holiday-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.holiday-row:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 640px) {
+  .holiday-form {
+    grid-template-columns: 1fr;
+  }
+  .holiday-form .span-2 {
+    grid-column: auto;
+  }
+}
+.unexpected-check {
+  align-items: flex-start;
+}
+.unexpected-check .block {
+  display: block;
+  margin-top: 2px;
+}
+.unexpected-badge {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.holiday-impact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--primary-50);
+  color: var(--primary);
+}

@@ -1,0 +1,25 @@
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(145px, 1fr));
+  gap: 14px;
+}
+.upcoming-exam-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 9px;
+  border-bottom: 1px dashed var(--line);
+}
+.upcoming-exam-row:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 1180px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

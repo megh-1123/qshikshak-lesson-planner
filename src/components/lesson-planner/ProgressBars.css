@@ -1,0 +1,93 @@
+.ch-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ch-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: var(--fs-sm);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.ch-legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: var(--fs-xs);
+  color: var(--text-2);
+}
+.ch-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: -1px;
+}
+
+/* One chapter: name + tag on the first line, full-width bar on the second */
+.ch-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'name tag'
+    'bar  bar';
+  column-gap: 12px;
+  row-gap: 6px;
+  align-items: start;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--line);
+}
+.ch-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.ch-name {
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-sm);
+  min-width: 0;
+}
+.ch-name small {
+  color: var(--text-3);
+}
+.ch-bar {
+  grid-area: bar;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ch-track {
+  flex: 1;
+  height: 10px;
+  border-radius: 99px;
+  background: var(--band-break);
+  overflow: hidden;
+}
+.ch-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+.ch-pct {
+  width: 38px;
+  text-align: right;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.ch-tag {
+  grid-area: tag;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+  color: var(--c);
+  background: color-mix(in srgb, var(--c) 12%, white);
+}
